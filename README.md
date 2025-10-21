@@ -4,7 +4,7 @@ Redes de Computadores - TM
 
 Lara Strutz Carvalho
 
-Este repositório contém o código-fonte e os resultados do trabalho prático sobre controle de congestionamento do protocolo TCP.
+Este repositório contém o código-fonte e os resultados da segunda parte do trabalho prático 1, focado em controle de congestionamento do protocolo TCP.
 
 O projeto utiliza o simulador de redes **NS-3 (versão 3.36.1)** para realizar uma análise comparativa detalhada entre dois importantes algoritmos TCP:
 * **TCP NewReno:** Um algoritmo clássico, baseado em perdas.
