@@ -111,7 +111,6 @@ main(int argc, char* argv[])
     if (nFlows == 1)
     {
         std::string cwnd_fname = "lab2-part1-" + transport_prot + "-cwnd.txt";
-        // CORREÇÃO: Agenda a conexão do rastreador para depois do início da aplicação
         Simulator::Schedule(Seconds(1.00001), &TraceCwnd, cwnd_fname);
     }
     
@@ -134,7 +133,7 @@ main(int argc, char* argv[])
             double flowDuration = (it->second.timeLastRxPacket - it->second.timeFirstTxPacket).GetSeconds();
             if (flowDuration > 0)
             {
-                double goodput = it->second.rxBytes * 8.0 / flowDuration / 1000; // kbps
+                double goodput = it->second.rxBytes * 8.0 / flowDuration / 1000;
                 std::cout << "Flow " << it->first << " (" << t.sourceAddress << " -> " << t.destinationAddress << ") Goodput: " << goodput << " kbps" << std::endl;
                 totalGoodput += goodput;
             }
