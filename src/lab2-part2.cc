@@ -7,7 +7,7 @@
 #include "ns3/internet-module.h"
 #include "ns3/point-to-point-module.h"
 #include "ns3/applications-module.h"
-#include "ns3/flow-monitor-module.h" // CORREÇÃO: Incluído o módulo completo
+#include "ns3/flow-monitor-module.h"
 #include "ns3/rng-seed-manager.h"
 
 using namespace ns3;
